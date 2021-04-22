@@ -35,16 +35,16 @@ export const crearTodoHtml = (todo) => {
     return div.firstElementChild;
 }
 
-const actualizarContadorPendientesHTML = (todolist) =>{
+// const actualizarContadorPendientesHTML = (todolist) =>{
     
-    const cont = todolist.todos.filter(todo => !todo.completado).length;
-    const HtmlTodo = `<span class="todo-count"><strong>${cont}</strong> pendiente(s)</span>`
+//     const cont = todolist.todos.filter(todo => !todo.completado).length;
+//     const HtmlTodo = `<span class="todo-count"><strong>${cont}</strong> pendiente(s)</span>`
 
-    const div = document.createElement('div');
-    div.innerHTML = HtmlTodo;
-    ContadorPendientes.append(div.firstElementChild);
-    return div.firstElementChild;
-}
+//     const div = document.createElement('div');
+//     div.innerHTML = HtmlTodo;
+//     ContadorPendientes.append(div.firstElementChild);
+//     return div.firstElementChild;
+// }
 
 // Eventos
 //Funcion que sirve para agregar una nueva tarea y ademas agregarla en el html
@@ -135,8 +135,8 @@ ulFiltros.addEventListener('click', (event)=>{
     }
 });
 
-ContadorPendientes.addEventListener('keyup',(event)=>{
-    actualizarContadorPendientesHTML(todolist);
+// ContadorPendientes.addEventListener('keyup',(event)=>{
+//     actualizarContadorPendientesHTML(todolist);
     
 
-});
+// });
