@@ -140,3 +140,5 @@ ulFiltros.addEventListener('click', (event)=>{
     
 
 // });
+
+// implementar el contador de pendientes
